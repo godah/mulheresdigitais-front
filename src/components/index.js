@@ -24,6 +24,8 @@ import Tasks from './Tasks/Tasks';
 
 import Logo from './Logo/Logo';
 
+import Post from './Post/Post';
+
 export {
     // CardElements
     CardAuthor,
@@ -51,4 +53,6 @@ export {
     Tasks,
     //Logo
     Logo,
+    //Post do Timeline
+    Post,
 };
