@@ -54,3 +54,13 @@
     opacity: 1;
     color: #FFFFFF;
 }
+@font-face{
+    font-family: romantic;
+    src: url(../fonts/romantic-couple.ttf)
+}
+.font-romantic{
+    font-family: romantic;
+}
+.logo-mulheresdigitais{
+    font-size: 90pt;
+}

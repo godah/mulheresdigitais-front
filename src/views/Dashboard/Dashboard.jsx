@@ -17,10 +17,9 @@ import {
 import { Line, Bar } from "react-chartjs-2";
 // function that returns a color based on an interval of numbers
 
-import { PanelHeader, Stats, CardCategory, Tasks } from "components";
+import { PanelHeader, Stats, CardCategory, Tasks, Logo } from "components";
 
 import {
-  dashboardPanelChart,
   dashboardShippedProductsChart,
   dashboardAllProductsChart,
   dashboard24HoursPerformanceChart
@@ -38,8 +37,6 @@ class Dashboard extends React.Component {
     }
   }
   componentDidMount(){
-    
-
       fetch('https://mulheresdigitais.herokuapp.com/demo/all')
       .then(res => res.json())
       .then(json => {
@@ -48,8 +45,6 @@ class Dashboard extends React.Component {
           items: json
         })
       });
-
-
   }
   render() {
 
@@ -70,16 +65,13 @@ class Dashboard extends React.Component {
                 <li key={item.id}>
                   {item.name}
                 </li>
-              ))};
+              ))}
             </ul>
-          </div>
+          </div>          
           <PanelHeader
             size="lg"
             content={
-              <Line
-              data={dashboardPanelChart.data}
-              options={dashboardPanelChart.options}
-              />
+              <Logo title ="Título" subtitle="Subtítulo"/>
             }
             />
           <div className="content">
