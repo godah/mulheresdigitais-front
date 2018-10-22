@@ -10,8 +10,8 @@ import UserPage from "views/UserPage/UserPage.jsx";
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
-    icon: "design_app",
+    name: "Home",
+    icon: "files_paper",
     component: Dashboard
   },
   { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
@@ -24,7 +24,7 @@ var dashRoutes = [
   },
   {
     path: "/user-page",
-    name: "User Profile",
+    name: "Perfil",
     icon: "users_single-02",
     component: UserPage
   },

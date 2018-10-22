@@ -1,0 +1,48 @@
+import React from "react";
+
+class Dashboard extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false
+    }
+  }
+  componentDidMount(){
+      fetch('https://mulheresdigitais.herokuapp.com/demo/all')
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isLoaded: true,
+          items: json
+        })
+      });
+
+  }
+  render() {
+    var { isLoaded, items } = this.state;
+
+    if (!isLoaded){
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <div>
+
+          <div>
+            <ul>
+              {items.map(item => (
+                <li key={item.id}>
+                  {item.name}
+                </li>
+              ))}
+            </ul>
+          </div>   
+                 
+        </div>
+      );
+    }
+  }
+}
+
+export default Dashboard;
