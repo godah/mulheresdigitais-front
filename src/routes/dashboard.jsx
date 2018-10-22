@@ -6,6 +6,7 @@ import TableList from "views/TableList/TableList.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import Upgrade from "views/Upgrade/Upgrade.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
+import Signin from "../views/Signin/Signin";
 
 var dashRoutes = [
   {
@@ -13,6 +14,12 @@ var dashRoutes = [
     name: "Home",
     icon: "files_paper",
     component: Dashboard
+  },
+  {
+    path: "/signin",
+    name: "Cadastrar",
+    icon: "arrows-1_share-66",
+    component: Signin
   },
   { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
   { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
