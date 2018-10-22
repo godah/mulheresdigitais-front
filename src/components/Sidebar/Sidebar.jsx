@@ -32,10 +32,10 @@ class Sidebar extends React.Component {
   }
   render() {
     return (
-      <div className="sidebar" data-color="blue">
+      <div className="sidebar" data-color="red">
         <div className="logo">
           <a
-            href="https://www.creative-tim.com"
+            href="/"
             className="simple-text logo-mini"
           >
             <div className="logo-img">
@@ -43,10 +43,10 @@ class Sidebar extends React.Component {
             </div>
           </a>
           <a
-            href="https://www.creative-tim.com"
+            href="/"
             className="simple-text logo-normal"
           >
-            Creative Tim
+            Mulheres Digitais
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebar">
@@ -56,8 +56,7 @@ class Sidebar extends React.Component {
               return (
                 <li
                   className={
-                    this.activeRoute(prop.path) +
-                    (prop.pro ? " active active-pro" : "")
+                    this.activeRoute(prop.path)
                   }
                   key={key}
                 >
