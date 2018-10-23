@@ -32,7 +32,7 @@ class Sidebar extends React.Component {
   }
   render() {
     return (
-      <div className="sidebar" data-color="red">
+      <div className="sidebar" data-color="blue">
         <div className="logo">
           <a
             href="/"
@@ -53,6 +53,11 @@ class Sidebar extends React.Component {
           <Nav>
             {this.props.routes.map((prop, key) => {
               if (prop.redirect) return null;
+              //adicionado rota hidden funciona apenas a rota sem adicionar no sidebar
+              if (prop.hidden) {
+                this.activeRoute(prop.path);              
+                return null;
+              }
               return (
                 <li
                   className={

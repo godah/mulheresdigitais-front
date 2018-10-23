@@ -6,6 +6,7 @@ import TableList from "views/TableList/TableList.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
 import Signin from "../views/Signin/Signin";
+import Video from "../views/Video/Video";
 
 var dashRoutes = [
   {
@@ -19,6 +20,13 @@ var dashRoutes = [
     name: "Cadastrar",
     icon: "arrows-1_share-66",
     component: Signin
+  },
+  {
+    hidden: true,
+    path: "/video",
+    name: "Video",
+    icon: "media-1_button-play",
+    component: Video
   },
   { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
   { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
@@ -48,4 +56,5 @@ var dashRoutes = [
   },
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];
+
 export default dashRoutes;
