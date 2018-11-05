@@ -44,13 +44,13 @@ var dashRoutes = [
   },
   {
     path: "/extended-tables",
-    name: "Table List",
+    name: "Cursos",
     icon: "files_paper",
     component: TableList
   },
   {
     path: "/typography",
-    name: "Typography",
+    name: "Videoconferência",
     icon: "design-2_ruler-pencil",
     component: Typography
   },

@@ -16,7 +16,7 @@ class User extends React.Component {
             <Col md={8} xs={12}>
               <Card>
                 <CardHeader>
-                  <h5 className="title">Edit Profile</h5>
+                  <h5 className="title">Editar Perfil</h5>
                 </CardHeader>
                 <CardBody>
                   <form>
@@ -36,14 +36,14 @@ class User extends React.Component {
                           }
                         },
                         {
-                          label: "Username",
+                          label: "Nome de Usuário",
                           inputProps: {
                             type: "text",
                             defaultValue: "michael23"
                           }
                         },
                         {
-                          label: "Email address",
+                          label: "Email",
                           inputProps: {
                             type: "email",
                             placeholder: "Email"
@@ -55,7 +55,7 @@ class User extends React.Component {
                       ncols={["col-md-6 pr-1", "col-md-6 pl-1"]}
                       proprieties={[
                         {
-                          label: "First Name",
+                          label: "Primeiro Nome",
                           inputProps: {
                             type: "text",
                             placeholder: "First Name",
@@ -63,7 +63,7 @@ class User extends React.Component {
                           }
                         },
                         {
-                          label: "Last Name",
+                          label: "Último Nome",
                           inputProps: {
                             type: "text",
                             placeholder: "Last Name",
@@ -76,7 +76,7 @@ class User extends React.Component {
                       ncols={["col-md-12"]}
                       proprieties={[
                         {
-                          label: "Address",
+                          label: "Endereço",
                           inputProps: {
                             type: "text",
                             placeholder: "Home Address",
@@ -94,26 +94,26 @@ class User extends React.Component {
                       ]}
                       proprieties={[
                         {
-                          label: "City",
+                          label: "Cidade",
                           inputProps: {
                             type: "text",
-                            defaultValue: "Bucharest",
+                            defaultValue: "Belo Horizonte",
                             placeholder: "City"
                           }
                         },
                         {
-                          label: "Country",
+                          label: "País",
                           inputProps: {
                             type: "text",
-                            defaultValue: "Romania",
+                            defaultValue: "Brasil",
                             placeholder: "Country"
                           }
                         },
                         {
-                          label: "Postal Code",
+                          label: "Código Postal",
                           inputProps: {
                             type: "number",
-                            placeholder: "ZIP Code"
+                            placeholder: "Código Postal"
                           }
                         }
                       ]}
@@ -122,7 +122,7 @@ class User extends React.Component {
                       ncols={["col-md-12"]}
                       proprieties={[
                         {
-                          label: "About Me",
+                          label: "Descrição do Perfil",
                           inputProps: {
                             type: "textarea",
                             rows: "4",

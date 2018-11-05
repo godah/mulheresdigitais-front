@@ -46,7 +46,7 @@ class Dashboard extends React.Component {
         <PanelHeader
           size="lg"
           content={
-            <Logo title ="Título" subtitle="Subtítulo"/>
+            <Logo title ="Mulheres Digitais" subtitle="O Poder Feminino no Mercado Digital"/>
           }
           />
         <div className="content">
