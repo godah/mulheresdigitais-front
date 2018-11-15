@@ -3,8 +3,8 @@ import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 
 import { PanelHeader, FormInputs, CardAuthor, CardSocials } from "components";
 
-import userBackground from "assets/img/bg5.jpg";
-import userAvatar from "assets/img/mike.jpg";
+import userBackground from "assets/img/bg11.jpg";
+import userAvatar from "assets/img/default-avatar.png";
 
 class User extends React.Component {
   render() {
