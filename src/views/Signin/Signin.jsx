@@ -17,7 +17,7 @@ class Signin extends React.Component {
         lastName: "Andrew",
         email: "andrew@gmail.com",
         address: "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09",
-        city: "Belo Horizonte",
+        city: "Bucharest",
         country: "Brasil",
         postalcode: "31360363",
         description: "Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."

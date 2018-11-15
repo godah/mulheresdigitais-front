@@ -2907,13 +2907,17 @@ Created using IcoMoon - icomoon.io
     z-index: 3; }
   .sidebar[data-color="blue"]:after,
   .off-canvas-sidebar[data-color="blue"]:after {
-    background: #DC143C; }
+    background: #2CA8FF; }
   .sidebar[data-color="blue"] .nav li.active > a,
   .off-canvas-sidebar[data-color="blue"] .nav li.active > a {
+<<<<<<< HEAD
     color:#DC143C; }
+=======
+    color: #2CA8FF; }
+>>>>>>> parent of ab2f2b8... Alteração Cor do Menu + Editar Perfil
     .sidebar[data-color="blue"] .nav li.active > a i,
     .off-canvas-sidebar[data-color="blue"] .nav li.active > a i {
-      color: #DC143C; }
+      color: #2CA8FF; }
   .sidebar[data-color="green"]:after,
   .off-canvas-sidebar[data-color="green"]:after {
     background: #18ce0f; }
