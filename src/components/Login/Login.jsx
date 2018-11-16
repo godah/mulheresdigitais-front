@@ -18,10 +18,15 @@ class Login extends React.Component {
       userType: {id: 1},
       image: {id: 1}
     };
+    this.reload = this.reload.bind(this);
     this.notify = this.notify.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.url = 'https://mulheresdigitais.herokuapp.com/users';
+  }
+
+  reload(){
+    window.location.reload();
   }
 
   handleInputChange(event) {
@@ -117,7 +122,7 @@ class Login extends React.Component {
                       ]}
                     />
                     <Button type="submit" color="info">Enviar</Button>
-                    <Button onClick={this.goBack} color="danger">Cancelar</Button>
+                    <Button onClick={this.reload} color="danger">Limpar</Button>
                   </form>
                 </CardBody>
               </Card>

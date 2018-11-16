@@ -54,10 +54,8 @@ class Dashboard extends React.Component {
           <div>
             <Login/>
             <div className="centerOut">
-              <div className="centerIn">
-                <br/><br/>
-                <Button onClick={this.singin} color="info">Cadastrar</Button>
-              </div>
+                <br/>
+                <Button onClick={this.singin} color="info">Cadastrar</Button>              
             </div>
           </div>
         );
@@ -69,7 +67,7 @@ class Dashboard extends React.Component {
         );
       }
     }else{
-      console.log('Usuario logado: '+userLoged.name);
+      //console.log('Usuario logado: '+userLoged.name);
       return (
         <div className="wrapper">
           <Sidebar {...this.props} routes={dashboardRoutes} />

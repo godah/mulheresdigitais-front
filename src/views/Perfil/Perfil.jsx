@@ -58,7 +58,8 @@ class Signin extends React.Component {
   
   //GET
   componentDidMount(){
-    this.id = Number(77);
+    var user = JSON.parse(window.sessionStorage.getItem('user'));
+    this.id = Number(user.id);
     if (this.id > Number(0)){
       fetch(this.url+'/'+this.id)
       .then(res => res.json())
@@ -129,9 +130,11 @@ class Signin extends React.Component {
                           inputProps: {
                             name: "pwd",
                             type: "password",
-                            defaultValue: this.state.pwd,
+                            defaultValue: "",
                             placeholder: "Senha",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "45",
+                            required: true
                           }
                         }
                       ]}
@@ -146,7 +149,9 @@ class Signin extends React.Component {
                             type: "email",
                             defaultValue: this.state.email,
                             placeholder: "Email",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "144",
+                            required: true
                           }
                         }
                       ]}
@@ -161,7 +166,9 @@ class Signin extends React.Component {
                             type: "text",
                             defaultValue: this.state.firstname,
                             placeholder: "Primeiro Nome",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "45",
+                            required: true
                           }
                         },
                         {
@@ -171,7 +178,9 @@ class Signin extends React.Component {
                             type: "text",
                             defaultValue: this.state.lastname,
                             placeholder: "Último Nome",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "45",
+                            required: true
                           }
                         }
                       ]}
@@ -186,7 +195,9 @@ class Signin extends React.Component {
                             type: "text",
                             defaultValue: this.state.city,
                             placeholder: "Cidade",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "100",
+                            required: true
                           }
                         },
                         {
@@ -196,7 +207,9 @@ class Signin extends React.Component {
                             type: "text",
                             defaultValue: this.state.country,
                             placeholder: "País",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "45",
+                            required: true
                           }
                         }
                       ]}
@@ -209,11 +222,13 @@ class Signin extends React.Component {
                           inputProps: {
                             name: "userdescription",
                             type: "textarea",
-                            rows: "4",
+                            rows: "6",
                             cols: "80",
                             value: this.state.userdescription,
                             placeholder: "Descrição do perfil",
-                            onChange: this.handleInputChange
+                            onChange: this.handleInputChange,
+                            maxLength: "255",
+                            required: true
                           }
                         }
                       ]}

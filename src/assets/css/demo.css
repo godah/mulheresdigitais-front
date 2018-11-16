@@ -81,3 +81,12 @@
     display: inline-block;
     width: 50%;    
 }
+.singinCard{
+    text-align: center;
+    width: 100%;
+}
+.singinContent{
+    display: inline-block;
+    width: 80%;
+    top: 30px;
+}
