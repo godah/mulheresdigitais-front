@@ -5,8 +5,12 @@ import Typography from "views/Typography/Typography.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
-import Signin from "../views/Signin/Signin";
+import Perfil from "../views/Perfil/Perfil";
 import Video from "../views/Video/Video";
+import CreateTimeLine from "../views/CreateTimeLine/CreateTimeLine";
+import CreateLesson from "../views/CreateLesson/CreateLesson";
+import VideoConference from "../views/VideoConference/VideoConference";
+import Search from "../views/Search/Search";
 
 var dashRoutes = [
   {
@@ -16,10 +20,16 @@ var dashRoutes = [
     component: Dashboard
   },
   {
-    path: "/signin",
-    name: "Cadastrar",
-    icon: "arrows-1_share-66",
-    component: Signin
+    path: "/search",
+    name: "Pesquisar",
+    icon: "ui-1_zoom-bold",
+    component: Search
+  },
+  {
+    path: "/perfil",
+    name: "Perfil",
+    icon: "users_single-02",
+    component: Perfil
   },
   {
     hidden: true,
@@ -28,31 +38,64 @@ var dashRoutes = [
     icon: "media-1_button-play",
     component: Video
   },
-  { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
-  { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
   {
+    path: "/createlesson",
+    name: "Criar Video-Aula",
+    icon: "media-1_button-play",
+    component: CreateLesson
+  },
+  {
+    path: "/videoconference",
+    name: "Coaching Video-conferencia",
+    icon: "education_hat",
+    component: VideoConference
+  },
+  { 
+    hidden: true,
+    path: "/icons", 
+    name: "Icons", 
+    icon: "design_image", 
+    component: Icons },
+  { 
+    hidden: true,
+    path: "/maps", 
+    name: "Maps", 
+    icon: "location_map-big", 
+    component: Maps },
+  {
+    hidden:true,
     path: "/notifications",
     name: "Notifications",
     icon: "ui-1_bell-53",
     component: Notifications
   },
   {
+    hidden:true,
     path: "/user-page",
-    name: "Perfil",
+    name: "UserPage",
     icon: "users_single-02",
     component: UserPage
   },
   {
+    hidden: true,
     path: "/extended-tables",
     name: "Table List",
     icon: "files_paper",
     component: TableList
   },
   {
+    hidden: true,
     path: "/typography",
     name: "Typography",
     icon: "design-2_ruler-pencil",
     component: Typography
+  },
+  {
+    hidden: true,
+    path: "/createtimeline",
+    name: "Publicar Linha do Tempo",
+    icon: "design_bullet-list-67",
+    component: CreateTimeLine
   },
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];
