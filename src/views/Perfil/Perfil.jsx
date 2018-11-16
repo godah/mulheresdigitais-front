@@ -64,7 +64,6 @@ class Signin extends React.Component {
       .then(res => res.json())
       .then(json => {
         this.setState(json);
-        console.log(this.state.userdescription);
       });
     }
   }
@@ -219,7 +218,7 @@ class Signin extends React.Component {
                         }
                       ]}
                     />
-                    <Button type="submit" onClick={this.handleClick} color="info">Salvar</Button>
+                    <Button type="submit" color="info">Salvar</Button>
                     <Button onClick={this.goBack} color="danger">Cancelar</Button>
                   </form>
                 </CardBody>

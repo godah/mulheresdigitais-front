@@ -39,7 +39,7 @@ class Sidebar extends React.Component {
             className="simple-text logo-mini"
           >
             <div className="logo-img">
-              <img src={logo}/>
+              <img src={logo} alt=""/>
             </div>
           </a>
           <a

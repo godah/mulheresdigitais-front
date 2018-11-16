@@ -28,7 +28,6 @@ class Dashboard extends React.Component {
 
   render() {
     var { isLoaded, items } = this.state;
-
     if (!isLoaded){
       return (
         <div>
@@ -46,9 +45,7 @@ class Dashboard extends React.Component {
         </div>
       );
     }else{
-      console.log('posts.size: '+items)
       return (
-        
         <div>
           <PanelHeader
             size="lg"
@@ -66,7 +63,6 @@ class Dashboard extends React.Component {
               </Col>
               ))}
             </Row>
-
           </div>
         </div>
       );

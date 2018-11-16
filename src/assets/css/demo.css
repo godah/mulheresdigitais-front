@@ -64,3 +64,20 @@
 .logo-mulheresdigitais{
     font-size: 90pt;
 }
+.loginCard{
+    text-align: center;
+    width: 100%;
+}
+.loginContent{
+    display: inline-block;
+    width: 40%;
+    top: 30px;
+}
+.centerOut{
+    text-align: center;
+    width: 100%;
+}
+.centerIn{
+    display: inline-block;
+    width: 50%;    
+}
