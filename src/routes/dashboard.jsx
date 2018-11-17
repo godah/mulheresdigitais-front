@@ -20,16 +20,22 @@ var dashRoutes = [
     component: Dashboard
   },
   {
+    path: "/perfil",
+    name: "Perfil",
+    icon: "users_single-02",
+    component: Perfil
+  },
+  {
     path: "/search",
     name: "Pesquisar",
     icon: "ui-1_zoom-bold",
     component: Search
   },
   {
-    path: "/perfil",
-    name: "Perfil",
-    icon: "users_single-02",
-    component: Perfil
+    path: "/createtimeline",
+    name: "Minha linha do tempo",
+    icon: "design_bullet-list-67",
+    component: CreateTimeLine
   },
   {
     hidden: true,
@@ -40,7 +46,7 @@ var dashRoutes = [
   },
   {
     path: "/createlesson",
-    name: "Criar Video-Aula",
+    name: "Minhas Video-Aulas",
     icon: "media-1_button-play",
     component: CreateLesson
   },
@@ -91,11 +97,16 @@ var dashRoutes = [
     component: Typography
   },
   {
-    hidden: true,
-    path: "/createtimeline",
-    name: "Publicar Linha do Tempo",
-    icon: "design_bullet-list-67",
-    component: CreateTimeLine
+    path: "/vagas",
+    name: "Vagas",
+    icon: "education_paper",
+    component: Typography
+  },
+  {
+    path: "/faleconosco",
+    name: "Fale Conosco",
+    icon: "ui-1_email-85",
+    component: Typography
   },
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];

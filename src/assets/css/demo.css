@@ -70,7 +70,7 @@
 }
 .loginContent{
     display: inline-block;
-    width: 40%;
+    width: 300px;
     top: 30px;
 }
 .centerOut{
@@ -79,7 +79,7 @@
 }
 .centerIn{
     display: inline-block;
-    width: 50%;    
+    width: 100px;    
 }
 .singinCard{
     text-align: center;

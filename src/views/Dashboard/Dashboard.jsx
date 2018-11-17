@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col  } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import { Post, PanelHeader, Logo } from "../../components";
 
 class Dashboard extends React.Component {
@@ -16,7 +16,7 @@ class Dashboard extends React.Component {
   
   //GET
   componentDidMount(){
-    fetch(this.url)
+    fetch(this.url+"/top15")
     .then(res => res.json())
     .then(json => {
       this.setState({
@@ -50,16 +50,19 @@ class Dashboard extends React.Component {
           <PanelHeader
             size="lg"
             content={
-              <Logo title ="Mulheres Digitais" subtitle="O Poder Feminino no Mercado Digital"/>
+              <div>
+                <Logo title ="Mulheres Digitais" subtitle="O Poder Feminino no Mercado Digital"/>
+              </div>
             }
             />
           <div className="content">
             <Row>
-              {items.map(item => (
-                <Col xs={12} md={12}>
-                <Post user={item.user.firstname+' '+item.user.lastname} title={item.title}
-                  text={item.text}
-                  dateformated={item.date}/>
+              {items.map((item, key) => (
+                <Col xs={12} md={12} key={key}>
+                  <Post user={item.user.firstname+' '+item.user.lastname} title={item.title}
+                    text={item.text}
+                    dateformated={item.date}
+                    hidden={true}/>
               </Col>
               ))}
             </Row>

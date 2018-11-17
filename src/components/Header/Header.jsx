@@ -154,7 +154,7 @@ class Header extends React.Component {
           >
             <form>
               <InputGroup className="no-border">
-                <Input placeholder="Search..." />
+                <Input placeholder="Pesquisar..." />
                 <InputGroupAddon addonType="append">
                   <InputGroupText>
                     <i className="now-ui-icons ui-1_zoom-bold" />
@@ -171,7 +171,7 @@ class Header extends React.Component {
                 <DropdownToggle caret nav>
                   <i className="now-ui-icons users_single-02" />
                   <p>
-                    <span className="d-lg-none d-md-block">Some Actions</span>
+                    <span className="d-lg-none d-md-block">Usuario</span>
                   </p>
                 </DropdownToggle>
                 <DropdownMenu right>

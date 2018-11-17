@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardBody, Row, Col ,Button} from "reactstrap";
-import { PanelHeader, FormInputs } from "components";
+import { FormInputs } from "components";
 import NotificationAlert from "react-notification-alert";
 
 class Singin extends React.Component {
@@ -83,7 +83,6 @@ class Singin extends React.Component {
       //console.log("Result: ", result);
     });
   }
-
 
   render() {
     return (
