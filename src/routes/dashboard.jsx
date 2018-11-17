@@ -11,6 +11,8 @@ import CreateTimeLine from "../views/CreateTimeLine/CreateTimeLine";
 import CreateLesson from "../views/CreateLesson/CreateLesson";
 import VideoConference from "../views/VideoConference/VideoConference";
 import Search from "../views/Search/Search";
+import Vagas from "../views/Vagas/Vagas";
+import FaleConosco from "../views/FaleConosco/FaleConosco";
 
 var dashRoutes = [
   {
@@ -100,13 +102,13 @@ var dashRoutes = [
     path: "/vagas",
     name: "Vagas",
     icon: "education_paper",
-    component: Typography
+    component: Vagas
   },
   {
     path: "/faleconosco",
     name: "Fale Conosco",
     icon: "ui-1_email-85",
-    component: Typography
+    component: FaleConosco
   },
   { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
 ];
