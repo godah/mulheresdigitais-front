@@ -19,6 +19,7 @@ class CreateLesson extends React.Component {
 
   //GET
   componentDidMount(){
+    //TODO filtro por usuario logado, falta usersknowledges
     fetch(this.url)
     .then(res => res.json())
     .then(json => {

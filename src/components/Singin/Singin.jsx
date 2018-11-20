@@ -225,6 +225,7 @@ class Singin extends React.Component {
                   </form>
                 </CardBody>
               </Card>
+              
             </Col>
           </Row>
         </div>

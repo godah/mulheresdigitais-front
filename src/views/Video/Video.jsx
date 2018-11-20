@@ -1,28 +1,41 @@
 import React from "react";
 import { Row  } from "reactstrap";
 import { PanelHeader } from "../../components";
+import VideoComp from "../../components/Video/Video";
 
 class Video extends React.Component {
 
   constructor(props){
     super(props);
-   
-    //carga para teste
-    this.video = [
-      {
-        user: 'Usuário1',
-        title: 'title1',
-        url: '',
-        description: 'Text1 text1 text1 text1 text1 text1 text1 text1.',
-        dateformated: '22/10/2018 13:53'
-      }
-    ]
+    this.state = {
+      id: "",
+      title: "",
+      lessondescription: "",
+      video: "",
+      date: "",
+      userKnowledge: ""
+    };
+    var href = window.location.href;
+    this.videoId = href.substring(28);
+    this.url = 'https://mulheresdigitais.herokuapp.com/lessons';
   }
-
-  componentDidMount(){ 
+  
+  //GET
+  componentDidMount(){
+    this.id = Number(this.videoId);
+    if (this.id > Number(0)){
+      fetch(this.url+'/'+this.id)
+      .then(res => res.json())
+      .then(json => {
+        this.setState(json);
+      });
+    }
   }
-
+  
+  
   render() {
+    console.log(this.videoId);
+    
     return (
 
       <div>
@@ -32,7 +45,8 @@ class Video extends React.Component {
           <Row>
             <div>
 
-              
+              <VideoComp id={this.state.id} title={this.state.title} dateformated={this.state.date}
+                  videolink={this.state.video} description={this.state.lessondescription}/>
 
             </div>
           </Row>

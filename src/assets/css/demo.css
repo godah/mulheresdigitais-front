@@ -90,3 +90,13 @@
     width: 80%;
     top: 30px;
 }
+
+.videoCard{
+    text-align: center;
+    width: 100%;
+}
+.videoContent{
+    display: inline-block;
+    width: 80%;
+    top: 30px;
+}

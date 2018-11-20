@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, CardTitle, Button, Row, Col} from "reactstrap";
+import { Card, CardHeader, CardBody, CardFooter, CardTitle, Button, Row, Col } from "reactstrap";
 import { CardCategory } from "components";
+import { Link }from "react-router-dom";
 class VideoItemList extends React.Component {
 
 
@@ -53,7 +54,16 @@ class VideoItemList extends React.Component {
           <CardFooter>
             <hr />
             <p className="font-weight-light text-right">{dateString}</p>
-            <Button hidden={this.props.hidden} onClick={this.remove} color="danger">Remover</Button>  
+            <Row>
+              <Col md={2} xs={2}>
+                <Link to={`/video/${this.props.id}`}>
+                  <Button color="info">Visualizar</Button>  
+                </Link>
+              </Col>
+              <Col md={2} xs={2}>
+                <Button hidden={this.props.hidden} onClick={this.remove} color="danger">Remover</Button>  
+              </Col>
+            </Row>
           </CardFooter>
         </Card>
       </div>
