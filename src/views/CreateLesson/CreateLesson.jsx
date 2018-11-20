@@ -19,7 +19,6 @@ class CreateLesson extends React.Component {
 
   //GET
   componentDidMount(){
-    //fetch(this.url+"/user/"+this.user.id)
     fetch(this.url)
     .then(res => res.json())
     .then(json => {
@@ -32,7 +31,6 @@ class CreateLesson extends React.Component {
 
   render() {
     var { items } = this.state;
-    console.log(items.length);
     return (   
       <div>
         <PanelHeader size="sm"/>
