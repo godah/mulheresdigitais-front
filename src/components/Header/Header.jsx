@@ -22,6 +22,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      keyWord: "",
       isOpen: false,
       dropdownOpen: false,
       color: "transparent"
@@ -29,13 +30,21 @@ class Header extends React.Component {
     this.user = JSON.parse(window.sessionStorage.getItem('user'));
     this.toggle = this.toggle.bind(this);
     this.dropdownToggle = this.dropdownToggle.bind(this);
+    this.pesquisar = this.pesquisar.bind(this);
+    this.updateInputValue = this.updateInputValue.bind(this);
+    this.url = 'https://mulheresdigitais.herokuapp.com/lessons';
   }
-
+  
   sair(){
     window.sessionStorage.setItem('user', null);
     window.location.reload();
   }
-
+  
+  pesquisar(){
+    console.log("pesquisar: "+this.state.keyWord);
+    window.location = "/search/pesquisar="+this.state.keyWord;
+  }
+  
   toggle() {
     if (this.state.isOpen) {
       this.setState({
@@ -96,6 +105,11 @@ class Header extends React.Component {
       });
     }
   }
+  updateInputValue(evt){
+    this.setState({
+      keyWord: evt.target.value
+    });
+  }
   componentDidMount() {
     window.addEventListener("resize", this.updateColor.bind(this));
   }
@@ -152,16 +166,18 @@ class Header extends React.Component {
             navbar
             className="justify-content-end"
           >
-            <form>
+            <div>
               <InputGroup className="no-border">
-                <Input placeholder="Pesquisar..." />
+                <Input placeholder="Pesquisar..."
+                   type="text" value={this.state.keyWord} onChange={this.updateInputValue}
+                   onSubmit={this.pesquisar}/>
                 <InputGroupAddon addonType="append">
-                  <InputGroupText>
-                    <i className="now-ui-icons ui-1_zoom-bold" />
+                  <InputGroupText>                    
+                    <div className="now-ui-icons ui-1_zoom-bold" onClick={this.pesquisar}/>
                   </InputGroupText>
                 </InputGroupAddon>
               </InputGroup>
-            </form>
+            </div>
             <Nav navbar>
               <Dropdown
                 nav
