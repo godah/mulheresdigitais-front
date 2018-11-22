@@ -13,7 +13,11 @@ class Search extends React.Component {
       isLoaded: false
     }
     var href = window.location.href;
-    this.keyWord = href.substring(39);
+    if(href.startsWith('https://mulheresdigitais.herokuapp.com')){
+      this.keyWord = href.substring(63);
+    }else{
+      this.keyWord = href.substring(39);
+    }
     this.url = 'https://mulheresdigitais.herokuapp.com/lessons';
   }
 
