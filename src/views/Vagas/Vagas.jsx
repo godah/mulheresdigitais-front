@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "reactstrap";
+import { Row, Col} from "reactstrap";
 import { PanelHeader } from "../../components";
 
 class Vagas extends React.Component {
@@ -20,7 +20,12 @@ class Vagas extends React.Component {
         <PanelHeader size="sm"/>
         <div className="content">
           <Row>
-            
+            <Col>
+            </Col>
+            <Col>
+            </Col>
+            <Col>
+            </Col>
           </Row>
         </div>
       </div>

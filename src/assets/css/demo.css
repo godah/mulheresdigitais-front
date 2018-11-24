@@ -100,3 +100,10 @@
     width: 80%;
     top: 30px;
 }
+
+.social{
+    font-size: 28px; 
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
