@@ -16,7 +16,11 @@ class Video extends React.Component {
       userKnowledge: ""
     };
     var href = window.location.href;
-    this.videoId = href.substring(28);
+    if(href.startsWith('https://mulheres-digitais-front.herokuapp.com/video/')){
+      this.videoId = href.substring(52);
+    }else{
+      this.videoId = href.substring(28);
+    }
     this.url = 'https://mulheresdigitais.herokuapp.com/lessons';
   }
   
