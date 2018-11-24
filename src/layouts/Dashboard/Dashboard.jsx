@@ -21,16 +21,20 @@ class Dashboard extends React.Component {
   }
 
   componentDidMount() {
+    /*
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(this.refs.mainPanel);
       document.body.classList.toggle("perfect-scrollbar-on");
     }
+    */
   }
   componentWillUnmount() {
-    if (navigator.platform.indexOf("Win") > -1) {
+    /*
+    if (navigator.platform.indexOf("Win") > -1 && ps) {
       ps.destroy();
       document.body.classList.toggle("perfect-scrollbar-on");
     }
+    */
   }
   componentDidUpdate(e) {
     if (e.history.action === "PUSH") {
