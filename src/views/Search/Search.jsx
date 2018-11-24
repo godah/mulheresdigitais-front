@@ -13,14 +13,11 @@ class Search extends React.Component {
       isLoaded: false
     }
     var href = window.location.href;
-    
     this.keyWord = href.substring(63);
-    
     this.url = 'https://mulheresdigitais.herokuapp.com/lessons';
   }
 
   componentDidMount(){
-    //TODO filtro por usuario logado, falta usersknowledges
     fetch(this.url+"/pesquisar="+this.keyWord)
     .then(res => res.json())
     .then(json => {

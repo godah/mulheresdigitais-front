@@ -26,12 +26,8 @@ class VideoItemList extends React.Component {
   render() {
     var date = new Date(this.props.dateformated);
     var dateString = date.toDateString() + " - " + date.toLocaleTimeString();
-    var video;
-    if (this.props.videolink.startsWith("https://www.youtube.com/watch?")){
-      video = "https://www.youtube.com/embed/" +this.props.videolink.substring(32);
-    }else{
-      video = "https://www.youtube.com/embed/hn9jzDvM9nk";
-    }
+    var video = "https://www.youtube.com/embed/" +this.props.videolink;
+    
     return (
       <div className="video">   
         <Card className="Timeline">
@@ -43,7 +39,7 @@ class VideoItemList extends React.Component {
             <Row>
               <Col md={4} xs={4}>
                 <iframe title={this.props.title} width="160" height="90" src={video}
-                frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+                frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
               </Col>
               <Col md={8} xs={8}>

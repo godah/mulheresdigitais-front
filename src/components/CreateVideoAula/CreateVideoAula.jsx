@@ -27,8 +27,14 @@ class CreateVideoAula extends React.Component {
 
   handleInputChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
+    var value;
+    if(target.name === "video"){
+      value = target.value.substring(32);
+      console.log("video: "+target.value);
+    }else{
+      value = target.type === 'checkbox' ? target.checked : target.value;
+    }
     this.setState({[name]: value});
   }
 

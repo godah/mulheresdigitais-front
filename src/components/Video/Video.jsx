@@ -13,12 +13,8 @@ class VideoComp extends React.Component {
 
     var date = new Date(this.props.dateformated);
     var dateString = date.toDateString() + " - " + date.toLocaleTimeString();
-    var video;
-    if (this.props.videolink.startsWith("https://www.youtube.com/watch?")){
-      video = "https://www.youtube.com/embed/" +this.props.videolink.substring(32);
-    }else{
-      video = "https://www.youtube.com/embed/hn9jzDvM9nk";
-    }
+    var  video = "https://www.youtube.com/embed/" +this.props.videolink;
+    
     return (
       <div className="video">   
         <Card className="videoCard">
