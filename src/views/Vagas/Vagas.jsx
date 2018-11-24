@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col} from "reactstrap";
+import { Row } from "reactstrap";
 import { PanelHeader } from "../../components";
+import VagasItemList from "../../components/VagasItemList/VagasItemList";
 
 class Vagas extends React.Component {
 
@@ -20,12 +21,32 @@ class Vagas extends React.Component {
         <PanelHeader size="sm"/>
         <div className="content">
           <Row>
-            <Col>
-            </Col>
-            <Col>
-            </Col>
-            <Col>
-            </Col>
+            <VagasItemList title="Titulos" subtitle="Subtitulos" 
+            description="To shorten the code, it is possible to specify 
+            all the padding properties in one property."/>
+        
+            <VagasItemList />
+
+            <VagasItemList />
+        
+          </Row>
+          <Row>
+            <VagasItemList title="Titulos" subtitle="Subtitulos" 
+            description="To shorten the code, it is possible to specify 
+            all the padding properties in one property."/>
+        
+            <VagasItemList />
+
+            <VagasItemList />
+          </Row>
+          <Row>
+            <VagasItemList title="Titulos" subtitle="Subtitulos" 
+            description="To shorten the code, it is possible to specify 
+            all the padding properties in one property."/>
+        
+            <VagasItemList />
+
+            <VagasItemList />
           </Row>
         </div>
       </div>
