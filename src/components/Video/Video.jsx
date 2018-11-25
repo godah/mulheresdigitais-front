@@ -16,21 +16,20 @@ class VideoComp extends React.Component {
     var  video = "https://www.youtube.com/embed/" +this.props.videolink;
     
     return (
-      <div className="video">   
+      <div className="video ">   
         <Card className="videoCard centerOut">
-          <CardHeader className="videoContent centerIn">
+          <CardHeader className="videoContent ">
             <CardCategory>{this.props.user}</CardCategory>
             <CardTitle tag="h4" className="font-italic">{this.props.title}</CardTitle>
           </CardHeader>
           <CardBody className="videoContent centerIn">
             <Row>
-              <Col >
+              <Col className="centerOut">
                 <iframe title={this.props.title} width="560" height="315" src={video}
                 frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
+                <br/><br/>
                 <p>{this.props.description}</p>
-              </Col>
-              <Col>
               </Col>
             </Row>
           </CardBody>
