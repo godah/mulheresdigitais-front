@@ -12,7 +12,7 @@ class VagasItemList extends React.Component {
             <hr/>
           </div>
           <CardBody>
-            <div className="description text-center">
+            <div className="description text-center vagasDescription ">
               {this.props.description}
             </div>
           </CardBody>

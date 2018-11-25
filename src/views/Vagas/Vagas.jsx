@@ -21,32 +21,120 @@ class Vagas extends React.Component {
         <PanelHeader size="sm"/>
         <div className="content">
           <Row>
-            <VagasItemList title="Titulos" subtitle="Subtitulos" 
-            description="To shorten the code, it is possible to specify 
-            all the padding properties in one property."/>
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Superior completo em análise e desenvolvimento de sistemas ou 
+              tecnologia da informação, preferencialmente com pós-graduação em 
+              sistemas de informação ..."
+            />
         
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Profissionais com experiência em:<br/>
+              - Lógica de programação, algorítimo.<br/>
+              - Conhecimentos avançados em: Sql, mongodb, javascript, jquery, angularjs, ..."
+            />
 
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Para conceituada empresa de ti de blumenau/sc. Atividades: 
+              - Identificar, analisar e modelar as informações necessárias 
+              para o desenvolvimento de sistemas (novos e/ou alteração)."
+            />
         
           </Row>
           <Row>
-            <VagasItemList title="Titulos" subtitle="Subtitulos" 
-            description="To shorten the code, it is possible to specify 
-            all the padding properties in one property."/>
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Superior completo em análise e desenvolvimento de sistemas ou 
+              tecnologia da informação, preferencialmente com pós-graduação em 
+              sistemas de informação ..."
+            />
         
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Profissionais com experiência em:<br/>
+              - Lógica de programação, algorítimo.<br/>
+              - Conhecimentos avançados em: Sql, mongodb, javascript, jquery, angularjs, ..."
+            />
 
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Para conceituada empresa de ti de blumenau/sc. Atividades: 
+              - Identificar, analisar e modelar as informações necessárias 
+              para o desenvolvimento de sistemas (novos e/ou alteração)."
+            />
+        
           </Row>
           <Row>
-            <VagasItemList title="Titulos" subtitle="Subtitulos" 
-            description="To shorten the code, it is possible to specify 
-            all the padding properties in one property."/>
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Superior completo em análise e desenvolvimento de sistemas ou 
+              tecnologia da informação, preferencialmente com pós-graduação em 
+              sistemas de informação ..."
+            />
         
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Profissionais com experiência em:<br/>
+              - Lógica de programação, algorítimo.<br/>
+              - Conhecimentos avançados em: Sql, mongodb, javascript, jquery, angularjs, ..."
+            />
 
-            <VagasItemList />
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Para conceituada empresa de ti de blumenau/sc. Atividades: 
+              - Identificar, analisar e modelar as informações necessárias 
+              para o desenvolvimento de sistemas (novos e/ou alteração)."
+            />
+        
+          </Row>
+          <Row>
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Superior completo em análise e desenvolvimento de sistemas ou 
+              tecnologia da informação, preferencialmente com pós-graduação em 
+              sistemas de informação ..."
+            />
+        
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Profissionais com experiência em:<br/>
+              - Lógica de programação, algorítimo.<br/>
+              - Conhecimentos avançados em: Sql, mongodb, javascript, jquery, angularjs, ..."
+            />
+
+            <VagasItemList 
+              title="Vaga de Analista de Desenvolvimento de Sistemas" 
+              subtitle="Empresa disponível apenas para cadastrados." 
+              description="
+              Para conceituada empresa de ti de blumenau/sc. Atividades: 
+              - Identificar, analisar e modelar as informações necessárias 
+              para o desenvolvimento de sistemas (novos e/ou alteração)."
+            />
+        
           </Row>
         </div>
       </div>

@@ -17,15 +17,15 @@ class VideoComp extends React.Component {
     
     return (
       <div className="video">   
-        <Card className="videoCard">
-          <CardHeader className="videoContent">
+        <Card className="videoCard centerOut">
+          <CardHeader className="videoContent centerIn">
             <CardCategory>{this.props.user}</CardCategory>
             <CardTitle tag="h4" className="font-italic">{this.props.title}</CardTitle>
           </CardHeader>
-          <CardBody className="videoContent">
+          <CardBody className="videoContent centerIn">
             <Row>
               <Col >
-                <iframe title={this.props.title} width="854" height="480" src={video}
+                <iframe title={this.props.title} width="560" height="315" src={video}
                 frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
                 <p>{this.props.description}</p>
